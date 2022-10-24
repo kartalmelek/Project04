@@ -278,66 +278,66 @@ public class SpendinggoodPage {
 
 
     //US 11-12 - Mine (280-349)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//*[@class='w-icon-account'])[1]")
+    public WebElement signButton;
+    @FindBy(xpath ="(//*[@class='w-icon-account'])[1]")
+    public WebElement singout;
+    @FindBy(xpath ="(//*[@class='woocommerce-Input woocommerce-Input--text input-text'])[1]")
+    public WebElement userrEmail;
+    @FindBy(xpath ="(//*[@class='woocommerce-Input woocommerce-Input--text input-text'])[2]")
+    public WebElement password;
+    @FindBy(xpath = "//*[@id='menu-item-1074']")
+    public WebElement myaccaunt;
+    @FindBy(xpath = "//*[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--wcfm-store-manager']")
+    public WebElement stromanager;
+    @FindBy(xpath = "(//*[@class='text'])[4]")
+    public WebElement product;
+    @FindBy(xpath = "(//*[@class='text'])[18]")
+    public WebElement newadd;
+    @FindBy(xpath = "//*[@class='wcfmfa fa-arrow-alt-circle-right block-indicator']")
+    public WebElement invatid;
+    @FindBy(xpath ="//*[@id=\"wcfm_products_manage_form_toptan-urun-gosterme-ayarlari_head\"]/div")
+    public WebElement toptanurun;
+    @FindBy(xpath = "//*[@class='piecetype wcfm_title field_61d331d8dc5a9']")
+    public WebElement PieceType;
+    @FindBy(xpath = "//*[@id='unitpercart']")
+    public WebElement UnitsPerPiece;
+    @FindBy(xpath = "//*[@class='minorderqtytr wcfm_title field_61d33a93da83d']")
+    public WebElement MInOrderQuantity;
+    @FindBy(xpath ="//*[@class='wcfm_menu_item active']")
+    public WebElement home;
+    @FindBy(xpath ="//*[@id='wcfm-coupons_wrapper']")
+    public WebElement urunlistesi;
+    @FindBy(xpath ="//*[@id='wcfm-orders']")
+    public WebElement Ordertable;
+    @FindBy(xpath = "//*[@class='wcfm_menu_item active']")
+    public WebElement Orders;
+    @FindBy(xpath ="//*[@class='btn btn-dark btn-rounded btn-icon-right continue-shopping mb-4 mt-6']")
+    public WebElement goshop;
+    @FindBy(xpath ="//*[@class='woocommerce-button woocommerce-button--previous woocommerce-Button woocommerce-Button--previous button btn btn-primary btn-md']")
+    public WebElement previus;
+    @FindBy(xpath ="//*[@class='woocommerce-button woocommerce-button--next woocommerce-Button woocommerce-Button--next button btn btn-primary btn-md']")
+    public WebElement next;
+    @FindBy(xpath ="//*[@class='woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table']")
+    public WebElement Ordersbasligi;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div/div/div/div/div/div/table/thead/tr/th[1]")
+    public WebElement Order;
+    @FindBy(xpath = "//*[@class='wcfm_menu_item active']")
+    public WebElement coupons1;
+    @FindBy(xpath = "//*[@id='dropdown_shop_coupon_type']")
+    public WebElement showalltype;
+    @FindBy(xpath ="(//*[@class='text-uppercase text-center mb-0'])[3]")
+    public WebElement Adress;
+    @FindBy(xpath ="//*[@class='woocommerce-MyAccount-content col-md-9 pt-2']")
+    public WebElement Billingveshipping;
+    @FindBy(xpath ="//*[@id='user_email']")
+    public WebElement Email;
+    @FindBy(xpath ="//*[@class='wcfm_menu_items wcfm_menu_wcfm-customers']")
+    public WebElement Customer;
+    @FindBy(xpath ="//*[@id=\"wcfm-content\"]/div[2]/div[2]/div[2]/h2")
+    public WebElement edit;
+    @FindBy(xpath ="(//*[@class='wcfmfa fa-edit text_tip'])[1]")
+    public WebElement editcustomerbutton;
 
 
 
