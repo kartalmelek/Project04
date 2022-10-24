@@ -1,4 +1,4 @@
-package Page;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -448,7 +448,30 @@ public class SpendinggoodPage {
 
 
     //US 19-20-22 ASIM (450-499)
-
+    @FindBy (xpath = "//span[@class='wcfmfa fa-child']")
+    public WebElement followersButton;
+    @FindBy (className = "dataTables_empty")
+    public WebElement emptyTable;
+    @FindBy(xpath="//*[@class='wcfm_menu_items wcfm_menu_wcfm-products']")
+    public WebElement productsButton;
+    @FindBy (xpath = "//tbody//tr//td[3]")
+    public WebElement ilkUrun;
+    @FindBy (xpath = "//input[@class='wcfm_submit_button' and @value='View']")
+    public WebElement viewButton;
+    @FindBy (xpath = "//a[@href='#tab-reviews']")
+    public WebElement customerReviewsButton;
+    @FindBy (className = "comment-text")
+    public WebElement commentText;
+    @FindBy (xpath = "//header[@class='header custom-header header-11']")
+    public WebElement emptyHeader;
+    @FindBy (xpath = "//a[@href='/shop/?orderby=popularity&deals=1']")
+    public WebElement dailyDeals;
+    @FindBy (className = "toolbox-left")
+    public WebElement sortBy;
+    @FindBy (xpath = "//select[@name='orderby']//option")
+    public WebElement sortByDropDown;
+    @FindBy (xpath = "//div//figure")
+    public List<WebElement> dusukFiyatSiralamasi;
 
 
 
