@@ -349,46 +349,46 @@ public class SpendinggoodPage {
 
     //US 13-14-15 Melek (350-399)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//*[@class='wcfmfa fa-gift']")
+    public WebElement coupons;
+    @FindBy(xpath = "//*[@class='wcfm_sub_menu_items wcfm_sub_menu_items_coupon_manage moz_class']")
+    public WebElement AddNew;
+    @FindBy(xpath = "//input[@value='12344321']")
+    public WebElement code;
+    @FindBy(xpath = "//*[@class='wcfm-textarea wcfm_ele']")
+    public WebElement Description;
+    @FindBy(xpath = "//select[@id='discount_type']")
+    public WebElement DiscountType;
+    @FindBy(xpath = "//input[@id='coupon_amount']")
+    public WebElement CouponAmount;
+    @FindBy(xpath = "//input[@id='expiry_date']")
+    public WebElement CouponExpirydate;
+    @FindBy(xpath = "//input[@id='free_shipping']")
+    public WebElement AllowFreeshipping;
+    @FindBy(xpath = "//input[@id='show_on_store']")
+    public WebElement ShowOnstore;
+    @FindBy(xpath = "//input[@id='minimum_amount']")
+    public WebElement minInput;
+    @FindBy(xpath = "//input[@id='maximum_amount']")
+    public WebElement maxInput;
+    @FindBy(xpath = "//input[@id='individual_use']")
+    public WebElement IndividualUseonly;
+    @FindBy(xpath = "//input[@id='exclude_sale_items']")
+    public WebElement ExcludeSaleitems;
+    @FindBy(xpath = "(//input[@style='width: 447.781px;'])[4]")
+    public WebElement ExcludeCategories;
+    @FindBy(xpath = "//input[@id='customer_email']")
+    public WebElement EmailRestrictions;
+    @FindBy(xpath = "//*[@id='coupons_manage_limit']")
+    public WebElement Limit;
+    @FindBy(xpath = "//input[@id='wcfm_coupon_manager_submit_button']")
+    public WebElement submit1;
+    @FindBy(xpath = "//input[@id='usage_limit']")
+    public WebElement UsageLimit;
+    @FindBy(xpath = "//input[@id='limit_usage_to_x_items']")
+    public WebElement UsagetoXitems;
+    @FindBy(xpath = "//input[@id='usage_limit_per_user']")
+    public  WebElement UsagelimitPerUser;
 
 
 
