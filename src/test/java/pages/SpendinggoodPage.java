@@ -178,54 +178,54 @@ public class SpendinggoodPage {
 
 
     //Us 05-06-07 Mustafa (180-229)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath="//*[@class='wcfm_menu_items wcfm_menu_wcfm-products']")
+    public WebElement products;
+    @FindBy(xpath="//*[@class='sorting_disabled']")
+    public List<WebElement> producListMenu;
+    @FindBy(xpath="//*[@id='add_new_product_dashboard']")
+    public WebElement addNewButton;
+    @FindBy(xpath="//input[@id='is_virtual']")
+    public WebElement virtualText;
+    @FindBy(xpath="//input[@id='is_downloadable']")
+    public WebElement dawnlodableText;
+    @FindBy(xpath="//*[@id='pro_title']")
+    public WebElement productTitle;
+    @FindBy(xpath="//*[@id='gallery_img_gimage_0_display']")
+    public WebElement productPhoto;
+    @FindBy(xpath="//*[@id='menu-item-browse']")
+    public WebElement mediaGalery;
+    @FindBy(xpath="//li[@role='checkbox']")
+    public WebElement photos;
+    @FindBy(xpath="(//*[text()='Add to Gallery'])[3]")
+    public WebElement addToGalery;
+    @FindBy(xpath="//div//strong[text()='Short Description']")
+    public WebElement shortDescription;
+    @FindBy(xpath="//div//strong[text()='Description']")
+    public WebElement description;
+    @FindBy(xpath="//input[@id='manage_stock']")
+    public WebElement manageStockClick;
+    @FindBy(xpath="//*[@id='wcfm_products_simple_submit_button']")
+    public WebElement submitAddProduct;
+    @FindBy(xpath="//li/input[@value='229']")
+    public WebElement accessoriesCategories;
+    @FindBy(xpath="//li/input[@value='232']")
+    public WebElement bookmusicFilmCategories;
+    @FindBy(xpath="//li/input[@value='230']")
+    public WebElement electronicCategories;
+    @FindBy(xpath="//li/input[@value='235']")
+    public WebElement healthBeautyCategories;
+    @FindBy(xpath="//li/input[@value='350']")
+    public WebElement giftIdeasCategories;
+    @FindBy(xpath="//li/input[@value='344']")
+    public WebElement fashionCategories;
+    @FindBy(xpath="//li/input[@value='448']")
+    public WebElement cosmeticCategories;
+    @FindBy(xpath="//li/input[@value='345']")
+    public WebElement foodCategories;
+    @FindBy(xpath="//li/input[@value='353']")
+    public WebElement kidsCategories;
+    @FindBy(xpath="//li/input[@value='352']")
+    public WebElement menCategories;
 
     //US 08-09-10 Nevcan (230-279)
 
@@ -472,6 +472,74 @@ public class SpendinggoodPage {
     public WebElement sortByDropDown;
     @FindBy (xpath = "//div//figure")
     public List<WebElement> dusukFiyatSiralamasi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // mustafa 500-550
+    @FindBy(xpath="//li/input[@value='351']")
+    public WebElement womenCategories;
+    @FindBy(xpath="//li/input[@value='35']")
+    public WebElement elegantAutoGroupBrand;
+    @FindBy(xpath="//li/input[@value='41']")
+    public WebElement greenGrassBrand;
+    @FindBy(xpath="//li/input[@value='46']")
+    public WebElement nodeJsBrand;
+    @FindBy(xpath="//li/input[@value='47']")
+    public WebElement NSBBrand;
+    @FindBy(xpath="//li/input[@value='50']")
+    public WebElement REDBrand;
+    @FindBy(xpath="//li/input[@value='52']")
+    public WebElement skySuiteTechBrand;
+    @FindBy(xpath="//li/input[@value='55']")
+    public WebElement sterlingBrand;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
