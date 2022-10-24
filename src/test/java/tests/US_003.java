@@ -1,10 +1,9 @@
 package tests;
 
-import Page.SpendinggoodPage;
+import pages.SpendinggoodPage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-import Page.SpendinggoodPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
