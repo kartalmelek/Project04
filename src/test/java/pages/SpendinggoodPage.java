@@ -44,57 +44,57 @@ public class SpendinggoodPage {
 
 
 
-
-
-
-    //Us 01-02 Ertugrul (50-99)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Us 01-02 Ertugrul (47-99)
+    @FindBy(xpath = "//*[text()='Register']")
+    public WebElement Register;
+    @FindBy(xpath = "//*[@class='nav-link']")
+    public WebElement SIGNUP;
+    @FindBy(xpath = "//*[@class='wcfmmp_become_vendor_link']")
+    public WebElement BecomeVendor;
+    @FindBy(xpath = "//*[@class='page-title']")
+    public WebElement VendorRegistration;
+    @FindBy(xpath = "//*[@id='wcfm_membership_registration_form']")
+    public WebElement EmailPasswordConfirmPassword;
+    @FindBy(xpath = "//*[@class='wcfm-membership-wrapper']")
+    public WebElement UcEmailPasswordConfirmPassword;
+    @FindBy(xpath = "//*[@id='user_email']")
+    public WebElement Email1;
+    @FindBy(xpath = "//*[@class='wcfm-text wcfm_email_verified_input']")
+    public WebElement VerificationCodeBox;
+    @FindBy(xpath = "//*[@class='wcfm-text wcfm_submit_button wcfm_email_verified_button']")
+    public WebElement ReSendCode;
+    @FindBy(xpath = "//*[@id='passoword']")
+    public WebElement Password;
+    @FindBy(xpath = "//*[@id='confirm_pwd']")
+    public WebElement ConfirmPassword;
+    @FindBy(xpath = "//*[@id='wcfm_membership_register_button']")
+    public WebElement RegisterButton;
+    @FindBy(xpath = "//*[@class='wcfm-message wcfm-error']")
+    public WebElement UniqOlmayanYazisi;
+    @FindBy(xpath = "//*[@id='menu-item-1074']")
+    public WebElement MyAccount;
+    @FindBy(xpath = "//*[@class='email']")
+    public WebElement geciciEmail;
+    @FindBy(css = "a#renew")
+    public WebElement emailBoxRefresh;
+    @FindBy(xpath = "//tbody//tr[1]")
+    public WebElement geciciEmailBox;
+    @FindBy(xpath = "//*[@id='body_content_inner']")
+    public WebElement verificationCode;
+    @FindBy(xpath = "//*[@id='renew']")
+    public WebElement yenilemeTusu;
+    @FindBy(xpath = "//*[@class='page-title']")
+    public WebElement MyAccountYazisi;
+    @FindBy(xpath = "//*[@id='username']")
+    public WebElement UserName;
+    @FindBy(xpath = "//*[@id='password']")
+    public WebElement PasswordSignIn;
+    @FindBy(xpath = "//*[@value='Sign In']")
+    public WebElement SignInButton;
+    @FindBy(xpath = "//*[text()='Log out']")
+    public WebElement LogOut;
+    @FindBy(xpath = "//*[@class='text-uppercase text-center mb-0']")
+    public List<WebElement> Elemanlar;
 
 
     //US 03-04-21 Yusuf (100-179)
@@ -353,9 +353,9 @@ public class SpendinggoodPage {
     public WebElement coupons;
     @FindBy(xpath = "//*[@class='wcfm_sub_menu_items wcfm_sub_menu_items_coupon_manage moz_class']")
     public WebElement AddNew;
-    @FindBy(xpath = "//input[@value='12344321']")
+    @FindBy(xpath = "//input[@id='title']")
     public WebElement code;
-    @FindBy(xpath = "//*[@class='wcfm-textarea wcfm_ele']")
+    @FindBy(xpath = "//*[@id='description']")
     public WebElement Description;
     @FindBy(xpath = "//select[@id='discount_type']")
     public WebElement DiscountType;
@@ -389,10 +389,10 @@ public class SpendinggoodPage {
     public WebElement UsagetoXitems;
     @FindBy(xpath = "//input[@id='usage_limit_per_user']")
     public  WebElement UsagelimitPerUser;
-
-
-
-
+    @FindBy(xpath = "//a[text()='25']")
+    public WebElement tarihSecimi;
+    @FindBy(xpath = "//*[contains(text(),'Coupon Successfully Published.')] ")
+    public WebElement BasariliYazisi;
 
 
 

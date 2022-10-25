@@ -51,7 +51,7 @@ public class US_008 extends TestBaseRapor {
 
         // My Account' butonuna tiklar
         spendinggoodPage.myAccount.click();
-        //actions.sendKeys(spendinggoodPage.myAccount, Keys.ENTER).perform();
+        //actions.sendKeys(spendinggoodPage.myAccount, Keys.ENTER).perform();..
         ReusableMethods.waitFor(3);
 
         // Store Manager' butonuna tiklar
