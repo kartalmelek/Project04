@@ -99,7 +99,7 @@ public class US_003 extends TestBaseRapor {
     public  void loginmethod()  {
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
         spendinggoodPage.signIn.click();
-        spendinggoodPage.userName.sendKeys(ConfigReader.getProperty("userEmail"));
+        spendinggoodPage.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
         spendinggoodPage.passWord.sendKeys(ConfigReader.getProperty("pass"));
         spendinggoodPage.login2.click();
         ReusableMethods.waitFor(3);
