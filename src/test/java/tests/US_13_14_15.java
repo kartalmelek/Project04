@@ -14,14 +14,13 @@ import utilities.ReusableMethods;
 import java.io.IOException;
 import java.util.Random;
 
-
-public class US_013 {
+public class US_13_14_15 {
     @Test
-    public static  void US013() throws InterruptedException, IOException {
+    public static void US013() throws InterruptedException, IOException {
 
-        Actions actions=new Actions(Driver.getDriver());
+        Actions actions = new Actions(Driver.getDriver());
         SpendinggoodPage spendinggoodPages = new SpendinggoodPage();
-        Faker faker= new Faker();
+        Faker faker = new Faker();
 
         // Vendor "https://spendinggood.com/"  adresine gider
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
@@ -31,7 +30,6 @@ public class US_013 {
 
         // Vendor "Username or email address" inputuna gecerli Email giriniz
         spendinggoodPages.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
-
         // Vendor "Password" inputuna  gecerli parolayi giriniz
         spendinggoodPages.passWord.sendKeys(ConfigReader.getProperty("password"));
 
@@ -64,8 +62,8 @@ public class US_013 {
         spendinggoodPages.Description.sendKeys("aciklama yazisi" + Keys.TAB);
 
         //Vendor "Discount Type" ta bir Dropdown secer
-        Select select=new Select(spendinggoodPages.DiscountType);
-        Random random =new Random();
+        Select select = new Select(spendinggoodPages.DiscountType);
+        Random random = new Random();
         select.selectByVisibleText("Fixed Product Discount");
         //Vendor "Coupon Amount" satirina bir kupon tutari giriniz
         actions.sendKeys(Keys.TAB).sendKeys(faker.number().digits(2)).sendKeys(Keys.TAB).perform();
@@ -81,22 +79,66 @@ public class US_013 {
 
         // Vendor "Show on store" secenegini isaretler
         actions.sendKeys(Keys.TAB);
-        ReusableMethods.waitFor(4);
+        ReusableMethods.waitFor(1);
         spendinggoodPages.ShowOnstore.click();
         ReusableMethods.waitFor(2);
+
+        //----------------------------------------------------------------------//
+
+        // Vendor "Minimum spend" bolumune en az alma miktarini giriniz
+        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
+        spendinggoodPages.minInput.sendKeys("5");
+
+        // Vendor "Maximum spend" bolumune en az alma miktarini giriniz
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        spendinggoodPages.maxInput.sendKeys("6");
+
+        // Vendor "Individual use only" secenegini isaretleyiniz
+        ReusableMethods.waitFor(3);
+        ReusableMethods.jsclick(spendinggoodPages.IndividualUseonly);
+        ReusableMethods.waitFor(3);
+
+
+        // Vendor "Exclude sale items" secenegini isaretleyiniz
+        spendinggoodPages.ExcludeSaleitems.click();
+        ReusableMethods.waitFor(3);
+
+        // Vendor "Exclude categories" dan random bir kategori seciniz
+        actions.click(spendinggoodPages.ExcludeCategories).
+                sendKeys("Boys" + Keys.TAB).sendKeys(Keys.ENTER).perform();
+
+        actions.sendKeys("Girls" + Keys.TAB).sendKeys(Keys.ENTER).perform();
+
+
+           //---------------------------------------------------------------------//
+
+
+        // Vendor "Limit" butonuna tiklayiniz
+        ReusableMethods.jsclick(spendinggoodPages.Limit);
+        ReusableMethods.waitFor(2);
+
+        // Vendor "Usage limit per coupon" a kupon basina kullanım limiti icin deger giriniz
+        actions.sendKeys(Keys.TAB);
+        spendinggoodPages.UsageLimit.sendKeys("2");
+
+        // Vendor "Limit usage to X items" a kupon kullanım limiti icin deger giriniz
+        ReusableMethods.waitFor(3);
+        actions.sendKeys(Keys.TAB);
+        spendinggoodPages.UsagetoXitems.sendKeys("3");
+
+        // Vendor "Usage limit per user" a kupon kullanım limiti icin deger giriniz
+        ReusableMethods.waitFor(3);
+        spendinggoodPages.UsagelimitPerUser.sendKeys("4");
 
         // Submit butonuna tiklatiniz
         spendinggoodPages.submit1.sendKeys(Keys.ENTER);
 
-       //  Vendor "Coupon Successfully Published." yazisinin görünüyor oldugunu test ediniz
-        ReusableMethods.waitForVisibility(spendinggoodPages.BasariliYazisi,15);
+        //  Vendor "Coupon Successfully Published." yazisinin görünüyor oldugunu test ediniz
+        ReusableMethods.waitForVisibility(spendinggoodPages.BasariliYazisi, 15);
 
-       // ReusableMethods.getScreenshotWebElement("Bararili yazisi",spendinggoodPages.BasariliYazisi);
+        // ReusableMethods.getScreenshotWebElement("Bararili yazisi",spendinggoodPages.BasariliYazisi);
         ReusableMethods.waitFor(4);
         Assert.assertTrue(spendinggoodPages.BasariliYazisi.isEnabled());
-
-
-
 
     }
 }
