@@ -398,55 +398,55 @@ public class SpendinggoodPage {
 
 
     //US 16-17-18 HAKAN (400-449)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//*[@class='wcfmfa fa-user-circle']")
+    public WebElement customers;
+    @FindBy(xpath = "//*[@class='wcfmfa fa-user-plus']")
+    public WebElement customers_AddNew;
+    @FindBy(css = "#user_name")
+    public WebElement customers_Username;
+    @FindBy(css = "#user_email")
+    public WebElement customers_Email;
+    @FindBy(css = "#first_name")
+    public WebElement customers_FirstName;
+    @FindBy(css = "#last_name")
+    public WebElement customers_LastName;
+    @FindBy(css = "#wcfm_customer_submit_button")
+    public WebElement customers_Submit;
+    @FindBy(xpath = "//input[@type='search'and @aria-controls='wcfm-shop-customers']")
+    public WebElement customers_Search;
+    @FindBy(xpath = "//tbody/tr/td[2]")
+    public WebElement customers_SearchResult;
+    @FindBy(xpath = "//tbody/tr/td[1]")
+    public List<WebElement> customers_Names;
+    @FindBy(xpath = "//tbody/tr/td[2]")
+    public List<WebElement> customers_UserNames;
+    @FindBy(xpath = "//tbody/tr/td[3]")
+    public List<WebElement> customers_Emails;
+    @FindBy(xpath = "//tbody/tr/td[4]")
+    public List<WebElement> customers_Locations;
+    @FindBy(xpath = "//tbody/tr/td[6]")
+    public List<WebElement> customers_MoneySpents;
+    @FindBy(xpath = "//tbody/tr/td[7]")
+    public List<WebElement> customers_LastOrders;
+    @FindBy(xpath = "//span[.='PDF']")
+    public WebElement customers_PDF;
+    @FindBy(xpath = "//span[.='Excel']")
+    public WebElement customers_Excel;
+    @FindBy(xpath = "//span[.='CSV']")
+    public WebElement customers_CSV;
+    @FindBy(css = "#bfirst_name")
+    public WebElement customers_BillingFirstName;
+    @FindBy(xpath = "//*[contains(text(),'Customer Successfully Saved.')]")
+    public WebElement customers_add;
+    @FindBy(css = "#bcountry")
+    public WebElement customers_Country;
+    @FindBy(css = "#same_as_billing")
+    public WebElement customers_Same_as_billing;
+    @FindBy(css = "#sfirst_name")
+    public WebElement customers_shippingFirstName;
+    @FindBy(xpath = "//*[@class='wcfmfa fa-retweet']")
+    public WebElement refund;
+    @FindBy(xpath = "//tbody/tr/td[5]")    public List<WebElement> refund_Type;
     //US 19-20-22 ASIM (450-499)
     @FindBy (xpath = "//span[@class='wcfmfa fa-child']")
     public WebElement followersButton;
