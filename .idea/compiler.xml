@@ -9,5 +9,8 @@
         <module name="Batch81_Project_Team04" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Batch81_Project_Team04" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
