@@ -78,6 +78,7 @@ public class US_011 extends TestBaseRapor {
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).doubleClick().
                 doubleClick(spendinggoodPage.toptanurun).click().perform();
         ReusableMethods.getScreenshotWebElement("toptanurun",spendinggoodPage.toptanurun);
+        ReusableMethods.waitFor(2000);
         extentTest.info("Toptan urunler bolumune  tiklandi");
         // Piece Type( bolumunun gorunulurlugunu dogrular
         Assert.assertTrue(spendinggoodPage.PieceType.isEnabled());
