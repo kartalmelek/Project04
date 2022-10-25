@@ -94,8 +94,8 @@ public class US_005 {  // Store Manager olarak, Products a gidip yeni ürünler 
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
         ReusableMethods.waitFor(2);
         sgPage5.myAccount.click();
-        sgPage5.userName.sendKeys(ConfigReader.getProperty("userEmail"));
-        sgPage5.passWord.sendKeys(ConfigReader.getProperty("pass"), Keys.ENTER);
+        sgPage5.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
+        sgPage5.passWord.sendKeys(ConfigReader.getProperty("password"), Keys.ENTER);
         ReusableMethods.waitFor(2);
         sgPage5.storeManager.click();
         ReusableMethods.waitFor(3);
