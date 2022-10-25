@@ -47,8 +47,6 @@ public class SpendinggoodPage {
 
 
 
-
-
     //Us 01-02 Ertugrul (50-99)
 
 
@@ -177,6 +175,8 @@ public class SpendinggoodPage {
 
 
 
+
+
     //Us 05-06-07 Mustafa (180-229)
 
 
@@ -228,47 +228,47 @@ public class SpendinggoodPage {
 
 
     //US 08-09-10 Nevcan (230-279)
+    @FindBy (xpath = "(//span[@class='wcfmfa fa-edit text_tip'])[5]")
+    public WebElement nikeTshirtEdit;
 
+    @FindBy (xpath = "//*[@id='manage_stock']")
+    public WebElement manageStockCheckBox;
 
+    @FindBy (xpath = "//*[@id='stock_qty']")
+    public WebElement stockQty;
 
+    @FindBy (xpath = "(//input[@class='wcfm_submit_button'])[1]")
+    public WebElement submitButton;
 
+    @FindBy (xpath = "(//*[@id='backorders'])[6]")
+    public WebElement backordersDropdown;
 
+    @FindBy (xpath = "//*[text()='Product Successfully Published.']")
+    public WebElement successfullyPublished;
 
+    @FindBy (xpath = "(//*[@class='page_collapsible_content_holder'])[4]")
+    public WebElement shippingButton;
 
+    @FindBy (xpath = "(//*[@class='wcfm-text wcfm_ele simple variable booking'])[1]")
+    public WebElement weight;
 
+    @FindBy (xpath = "(//*[@id='_wcfmmp_processing_time'])[3]")
+    public WebElement processTimeDropdown;
 
+    @FindBy (xpath = "(//*[@class='page_collapsible_content_holder'])[5]")
+    public WebElement attributesButton;
 
+    @FindBy (id = "attributes_is_active_1")
+    public WebElement colorCheckBox;
 
+    @FindBy (xpath = "(//*[@class='button wcfm_add_attribute_term wcfm_select_all_attributes'])[1]")
+    public WebElement colorSelectAll;
 
+    @FindBy (id = "attributes_is_active_2")
+    public WebElement sizeCheckBox;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy (xpath = "(//*[@class='button wcfm_add_attribute_term wcfm_select_all_attributes'])[2]")
+    public WebElement sizeSelectAll;
 
 
 
