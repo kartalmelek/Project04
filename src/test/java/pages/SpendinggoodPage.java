@@ -353,9 +353,9 @@ public class SpendinggoodPage {
     public WebElement coupons;
     @FindBy(xpath = "//*[@class='wcfm_sub_menu_items wcfm_sub_menu_items_coupon_manage moz_class']")
     public WebElement AddNew;
-    @FindBy(xpath = "//input[@value='12344321']")
+    @FindBy(xpath = "//input[@id='title']")
     public WebElement code;
-    @FindBy(xpath = "//*[@class='wcfm-textarea wcfm_ele']")
+    @FindBy(xpath = "//*[@id='description']")
     public WebElement Description;
     @FindBy(xpath = "//select[@id='discount_type']")
     public WebElement DiscountType;
@@ -389,10 +389,10 @@ public class SpendinggoodPage {
     public WebElement UsagetoXitems;
     @FindBy(xpath = "//input[@id='usage_limit_per_user']")
     public  WebElement UsagelimitPerUser;
-
-
-
-
+    @FindBy(xpath = "//a[text()='25']")
+    public WebElement tarihSecimi;
+    @FindBy(xpath = "//*[contains(text(),'Coupon Successfully Published.')] ")
+    public WebElement BasariliYazisi;
 
 
 
