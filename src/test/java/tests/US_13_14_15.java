@@ -29,10 +29,9 @@ public class US_13_14_15 {
         spendinggoodPages.signIn.click();
 
         // Vendor "Username or email address" inputuna gecerli Email giriniz
-        spendinggoodPages.userName.sendKeys(ConfigReader.getProperty("userEmail"));
-
+        spendinggoodPages.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
         // Vendor "Password" inputuna  gecerli parolayi giriniz
-        spendinggoodPages.passWord.sendKeys(ConfigReader.getProperty("pass"));
+        spendinggoodPages.passWord.sendKeys(ConfigReader.getProperty("password"));
 
         // Vendor "SIGN IN" butonuna tiklayiniz
         spendinggoodPages.submit.click();
