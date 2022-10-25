@@ -514,16 +514,14 @@ public class SpendinggoodPage {
     public WebElement skySuiteTechBrand;
     @FindBy(xpath="//li/input[@value='55']")
     public WebElement sterlingBrand;
-
-
-
-
-
-
-
-
-
-
+    @FindBy(id="featured_img_display")
+    public WebElement clickBigPhoto;
+    @FindBy(xpath="(//*[@class='attachment-preview js--select-attachment type-image subtype-png portrait'])[4]")
+    public WebElement chooseBigPhoto;
+    @FindBy(xpath="//button[text()='Select']")
+    public WebElement selectBigPhoto;
+    @FindBy(xpath="//input[@id='sold_individually']")
+    public WebElement soldIndividually;
 
 
 
