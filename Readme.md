@@ -20,19 +20,19 @@
 > - Store Manager olarak ürünleri ve satış raporlarını inceleyebilmeli
 > - İndirimli ürünleri listeletebilme ve sıralama yapabilmeli
 
-Bu testler çalıştırılırkenher aşamada doğrulamar **Assertion** kullanılarak yapılmış,
+Bu testler çalıştırılırken her aşamada doğrulamalar **Assertion** kullanılarak yapılmış,
 
 Oluşturulan methodlarla daha dinamik çalışılması sağlanmıştır.
 
 ### Testler Hazirlanirken:
-> - Yazilan Seneryolar da **Selenium** ve **TestNG** kütüphaneleri kullanılmiştır.
-> - Framework olarak ..........
+> - Yazilan Seneryolar da **Selenium** kütüphaneleri kullanılmiştır.
+> - Framework olarak **TestNG**
 > - Framework yapısı **Page Object Model(POM)** ile dizayn edilmiştir.
 > - Framework yapısı içrisinde yapılan kodlamalar da **Object Oriented Programming(OOP)** kullanılmıştır.
-> - Proje'de Locate'ler **By Method**'la alınmış, _FindBy Anotation_'ı kullanılmıştır.
+> - Proje'de Locate almada _FindBy Anotation_'ı kullanılmıştır.
 > - Her aşamada **Assertion**'larla testin akışı ile ilgili doğrulamlar yapılmıştır.
 > - Testlerde kullanılan Data'lar **Properties** class'ı kullanılarak alınmıştır.
-> - Raporlama methodu olarak .........
+> - Raporlama methodu olarak **TestBaseRapor** kullanılmışır
 
 
 <img src="pngs/java.jpg" width="100px" height="100px" padding="10px" align="left"/>
