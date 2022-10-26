@@ -38,11 +38,11 @@ public class US_008 extends TestBaseRapor {
         ReusableMethods.waitFor(3);
 
         // Valid e-mail girer
-        spendinggoodPage.userName.sendKeys(ConfigReader.getProperty("userEmail"));
+        spendinggoodPage.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
         ReusableMethods.waitFor(3);
 
         // Valid password girer
-        spendinggoodPage.passWord.sendKeys(ConfigReader.getProperty("pass"));
+        spendinggoodPage.passWord.sendKeys(ConfigReader.getProperty("password"));
         ReusableMethods.waitFor(3);
 
         // Sign-in butonuna tiklar
@@ -59,11 +59,11 @@ public class US_008 extends TestBaseRapor {
         ReusableMethods.waitFor(3);
 
         // Products' butonuna tiklar
-        spendinggoodPage.products.click();
+        ReusableMethods.jsclick(spendinggoodPage.products);
         ReusableMethods.waitFor(3);
 
         // Products' bolumunde urune tiklar
-        spendinggoodPage.nikeTshirtEdit.click();
+        spendinggoodPage.products.click();
         //actions.sendKeys(spendinggoodPage.nikeTshirt, Keys.ENTER).perform();
         ReusableMethods.waitFor(3);
 
@@ -100,20 +100,24 @@ public class US_008 extends TestBaseRapor {
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
 
         // Sign-in butonuna tiklar
-        spendinggoodPage.signIn.click();
+        ReusableMethods.waitFor(4);
+        spendinggoodPage.submit.click();
 
         // Valid e-mail girer
-        spendinggoodPage.userName.sendKeys(ConfigReader.getProperty("userEmail"));
+        ReusableMethods.waitFor(3);
+        spendinggoodPage.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
 
         // Valid password girer
-        spendinggoodPage.passWord.sendKeys(ConfigReader.getProperty("pass"));
+        ReusableMethods.waitFor(3);
+        spendinggoodPage.passWord.sendKeys(ConfigReader.getProperty("password"));
 
         // Sign-in butonuna tiklar
         spendinggoodPage.submit.click();
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(4);
 
         // My Account' butonuna tiklar
         spendinggoodPage.myAccount.click();
+
         //actions.sendKeys(spendinggoodPage.myAccount, Keys.ENTER).perform();
         ReusableMethods.waitFor(3);
 
