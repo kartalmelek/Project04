@@ -9,18 +9,17 @@ import pages.SpendinggoodPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
-import utilities.TestBaseRapor;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class US_005 extends TestBaseRapor {  // Store Manager olarak, Products a gidip yeni ürünler yükleyebilmeliyim
+public class US_005 {  // Store Manager olarak, Products a gidip yeni ürünler yükleyebilmeliyim
     SpendinggoodPage sgPage5= new SpendinggoodPage();
+
     Actions actions = new Actions(Driver.getDriver());
     @Test  // TC_001 Productsta urun listemi görmeliyim; status, stock, price, date
     public void TC001_seeProductsList() throws InterruptedException {
-        extentTest = extentReports.createTest("pozitif test","roductsta urun listemi görmeliyim; status, stock, price, date");
         signInProduct();
 
         List<String> workList = new ArrayList<>(Arrays.asList("Status","Stock","Price","Date"));
@@ -62,9 +61,9 @@ public class US_005 extends TestBaseRapor {  // Store Manager olarak, Products a
         sgPage5.selectBigPhoto.click();
 
         ReusableMethods.waitFor(2);
-        sgPage5.productTitle.sendKeys("NewLaptop1");
-        actions.sendKeys(Keys.TAB).sendKeys("2000").sendKeys(Keys.TAB).
-                sendKeys("1500").sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("MSK Laptop 16GB Ram 500 SSD").
+        sgPage5.productTitle.sendKeys("NewLaptop");
+        actions.sendKeys(Keys.TAB).sendKeys("20").sendKeys(Keys.TAB).
+                sendKeys("15").sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("MSK Laptop 16GB Ram 500 SSD").
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("16GB Ram \n 500 SSD \n Dual Core").perform();
         ReusableMethods.waitFor(2);
 
@@ -74,28 +73,28 @@ public class US_005 extends TestBaseRapor {  // Store Manager olarak, Products a
         Assert.assertTrue(sgPage5.description.isDisplayed());
 
         // TC_003 Urun ismi ekle; product title, satis miktarı, foto - Devami
-        sgPage5.accessoriesCategories.click();
-        sgPage5.elegantAutoGroupBrand.click();
-        ReusableMethods.waitFor(2);
 
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.waitFor(2);
-
-        ReusableMethods.jsclick(sgPage5.manageStockClick);
+        sgPage5.manageStockClick.click();
         ReusableMethods.waitFor(2);
         actions.sendKeys(Keys.TAB).sendKeys("10").perform();
         actions.sendKeys(Keys.PAGE_UP).perform();
         ReusableMethods.waitFor(2);
 
+        sgPage5.accessoriesCategories.click();
+        sgPage5.elegantAutoGroupBrand.click();
+
         ReusableMethods.waitFor(2);
-        ReusableMethods.jsclick(sgPage5.submitAddProduct);
+        sgPage5.submitAddProduct.click();
+
     }
     public void signInProduct(){
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
         ReusableMethods.waitFor(2);
         sgPage5.myAccount.click();
-        sgPage5.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
-        sgPage5.passWord.sendKeys(ConfigReader.getProperty("password"), Keys.ENTER);
+        sgPage5.userName.sendKeys(ConfigReader.getProperty("userEmail"));
+        sgPage5.passWord.sendKeys(ConfigReader.getProperty("pass"), Keys.ENTER);
         ReusableMethods.waitFor(2);
         sgPage5.storeManager.click();
         ReusableMethods.waitFor(3);
