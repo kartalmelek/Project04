@@ -8,8 +8,9 @@ import pages.SpendinggoodPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_007 { // Secilen ürünlerin brandini belirlemeliyim
+public class US_007 extends TestBaseRapor { // Secilen ürünlerin brandini belirlemeliyim
     SpendinggoodPage sgPage5 = new SpendinggoodPage();
     Actions actions = new Actions(Driver.getDriver());
     @Test
@@ -37,6 +38,7 @@ public class US_007 { // Secilen ürünlerin brandini belirlemeliyim
         sgPage5.sterlingBrand.click();
         Assert.assertTrue(sgPage5.sterlingBrand.isSelected(),"Sterling is not selected");
         ReusableMethods.waitFor(2);
+        extentTest = extentReports.createTest("pozitif test","Belirlenen Brands'lari sectigi gorulur");
         Driver.closeDriver();
     }
     public void signInAddProduct(){
