@@ -13,7 +13,7 @@
 > - Shipping opsiyonu ve Order Attributes özellikleri eklenebilmeli
 > - Toptan ürün gösterme ayarları
 > - Store Manager olarak tüm portal ve access elde edilmeli
-> - Store Manager olarak kuponlar olusturma ve Restrictions ve Limitlemeler yapilabilmeli
+> - Store Manager olarak kuponlar olusturma ve Restrictions ve Limitlemeler yapilabilmeli.
 > - Müşteriler listelenebilmeli, eklenebilmeli ve adres bilgileri girilebilmeli
 > - Müşterilere geri iade yapılabilmeli
 > - Store Manager olarak takipçileri göerbilmeli
