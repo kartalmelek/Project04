@@ -19,7 +19,7 @@ public class US_001 extends TestBaseRapor {
     SpendinggoodPage spendinGoodPage = new SpendinggoodPage();
     Actions actions = new Actions(Driver.getDriver());
 
-    @Test
+    @Test (groups = "group01")
     public void OnayKoduGirme() throws InterruptedException {
         extentTest = extentReports.createTest("Pozitif Test", "Yeni hesabin olusturuldugu gorulur");
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));

@@ -8,8 +8,9 @@ import pages.SpendinggoodPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_006 {  // Secilen ürünlerin categorilerini belirlemeliyim
+public class US_006 extends TestBaseRapor {  // Secilen ürünlerin categorilerini belirlemeliyim
     SpendinggoodPage sgPage5 = new SpendinggoodPage();
     Actions actions = new Actions(Driver.getDriver());
 
@@ -50,6 +51,7 @@ public class US_006 {  // Secilen ürünlerin categorilerini belirlemeliyim
         sgPage5.womenCategories.click();
         Assert.assertTrue(sgPage5.womenCategories.isSelected(),"Women is not selected");
         ReusableMethods.waitFor(4);
+        extentTest = extentReports.createTest("pozitif test","Belirlenen kategorileri sectigi gorulur");
         Driver.closeDriver();
     }
 
@@ -57,8 +59,8 @@ public class US_006 {  // Secilen ürünlerin categorilerini belirlemeliyim
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
         ReusableMethods.waitFor(2);
         sgPage5.myAccount.click();
-        sgPage5.userName.sendKeys(ConfigReader.getProperty("userEmail"));
-        sgPage5.passWord.sendKeys(ConfigReader.getProperty("pass"), Keys.ENTER);
+        sgPage5.userName.sendKeys(ConfigReader.getProperty("emailAddress"));
+        sgPage5.passWord.sendKeys(ConfigReader.getProperty("password"), Keys.ENTER);
         ReusableMethods.waitFor(2);
         sgPage5.storeManager.click();
         ReusableMethods.waitFor(2);
