@@ -1,4 +1,4 @@
-<img src="pngs/readme.png" align="right"/>
+<img src="src/pngs/readme.png" align="right"/>
 
 
 # https://www.spendinggood.com web Test Otomasyonu
@@ -13,7 +13,7 @@
 > - Shipping opsiyonu ve Order Attributes özellikleri eklenebilmeli
 > - Toptan ürün gösterme ayarları
 > - Store Manager olarak tüm portal ve access elde edilmeli
-> - Store Manager olarak kuponlar olusturma ve Restrictions ve Limitlemeler yapilabilmeli
+> - Store Manager olarak kuponlar olusturma ve Restrictions ve Limitlemeler yapilabilmeli.
 > - Müşteriler listelenebilmeli, eklenebilmeli ve adres bilgileri girilebilmeli
 > - Müşterilere geri iade yapılabilmeli
 > - Store Manager olarak takipçileri göerbilmeli
@@ -35,6 +35,6 @@ Oluşturulan methodlarla daha dinamik çalışılması sağlanmıştır.
 > - Raporlama methodu olarak **TestBaseRapor** kullanılmışır
 
 
-<img src="pngs/java.jpg" width="100px" height="100px" padding="10px" align="left"/>
-<img src="pngs/selenium.png" width="100px" height="100px" padding="10px" align="left"/>
-<img src="pngs/testng1.png" width="200px" height="100px" padding="10px" align="left"/>
+<img src="src/pngs/java.png" width="100px" height="100px" padding="10px" align="center"/>
+<img src="src/pngs/selenium.png" width="100px" height="100px" padding="10px" align="center"/>
+<img src="src/pngs/testng1.png" width="200px" height="100px" padding="10px" align="center"/>
