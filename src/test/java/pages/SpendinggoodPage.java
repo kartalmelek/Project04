@@ -95,8 +95,8 @@ public class SpendinggoodPage {
     public WebElement LogOut;
     @FindBy(xpath = "//*[@class='text-uppercase text-center mb-0']")
     public List<WebElement> Elemanlar;
-
-
+    @FindBy(xpath = "//span[text()='Sign In ']")
+    public WebElement signIn1;
     //US 03-04-21 Yusuf (100-179)
     @FindBy(xpath = "//*[@name='login']")
     public WebElement login2;
@@ -448,44 +448,44 @@ public class SpendinggoodPage {
     public WebElement refund;
     @FindBy(xpath = "//tbody/tr/td[5]")    public List<WebElement> refund_Type;
     //US 19-20-22 ASIM (450-499)
-    @FindBy (xpath = "//span[@class='wcfmfa fa-child']")
+    @FindBy (xpath = "(//span[@class='text'])[11]")
     public WebElement followersButton;
+
     @FindBy (className = "dataTables_empty")
     public WebElement emptyTable;
-    @FindBy(xpath="//*[@class='wcfm_menu_items wcfm_menu_wcfm-products']")
+
+    @FindBy(xpath="(//span[@class='text'])[4]")
     public WebElement productsButton;
-    @FindBy (xpath = "//tbody//tr//td[3]")
+
+    @FindBy (xpath = "//a[text()='MSK All In One']")
     public WebElement ilkUrun;
-    @FindBy (xpath = "//input[@class='wcfm_submit_button' and @value='View']")
+
+    @FindBy (xpath = "(//input[@class='wcfm_submit_button'])[3]")
     public WebElement viewButton;
+
     @FindBy (xpath = "//a[@href='#tab-reviews']")
     public WebElement customerReviewsButton;
+
     @FindBy (className = "comment-text")
     public WebElement commentText;
+
     @FindBy (xpath = "//header[@class='header custom-header header-11']")
     public WebElement emptyHeader;
-    @FindBy (xpath = "//a[@href='/shop/?orderby=popularity&deals=1']")
+
+    @FindBy (xpath = "(//a[@class='wolmart-icon-list-item'])[4]")
     public WebElement dailyDeals;
+
     @FindBy (className = "toolbox-left")
     public WebElement sortBy;
-    @FindBy (xpath = "//select[@name='orderby']//option")
+
+    @FindBy (xpath = "//select[@name='orderby']")
     public WebElement sortByDropDown;
-    @FindBy (xpath = "//div//figure")
+
+    @FindBy (xpath = "//li//div//figure")
     public List<WebElement> dusukFiyatSiralamasi;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy (xpath = "//li//div//figure")
+    public List<WebElement> yuksekFiyatSiralamasi;
 
 
 
