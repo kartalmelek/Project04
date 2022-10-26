@@ -35,6 +35,6 @@ Oluşturulan methodlarla daha dinamik çalışılması sağlanmıştır.
 > - Raporlama methodu olarak **TestBaseRapor** kullanılmışır
 
 
-<img src="src/pngs/java.png" width="100px" height="100px" padding="10px" align="center"/>
-<img src="src/pngs/selenium.png" width="100px" height="100px" padding="10px" align="center"/>
-<img src="src/pngs/testng1.png" width="200px" height="100px" padding="10px" align="center"/>
+<img src="src/pngs/java.png" width="100px" height="100px" padding="10px" align="left"/>
+<img src="src/pngs/selenium.png" width="100px" height="100px" padding="10px" align="left"/>
+<img src="src/pngs/testng1.png" width="200px" height="100px" padding="10px" align="left"/>
