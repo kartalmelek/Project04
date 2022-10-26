@@ -18,8 +18,7 @@ public class US_005 {  // Store Manager olarak, Products a gidip yeni ürünler 
     SpendinggoodPage sgPage5= new SpendinggoodPage();
 
     Actions actions = new Actions(Driver.getDriver());
-
-    @Test (groups = "group03")  // TC_001 Productsta urun listemi görmeliyim; status, stock, price, date
+    @Test  // TC_001 Productsta urun listemi görmeliyim; status, stock, price, date
     public void TC001_seeProductsList() throws InterruptedException {
         signInProduct();
 
@@ -39,7 +38,6 @@ public class US_005 {  // Store Manager olarak, Products a gidip yeni ürünler 
     }
         // TC_002 Yeni urun ekle (Add new); urun icin Virtual veya Downloadable secenegi olmali
         actions.sendKeys(Keys.PAGE_UP).perform();
-        ReusableMethods.waitFor(3);
         sgPage5.addNewButton.click();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.waitFor(2);
@@ -56,55 +54,54 @@ public class US_005 {  // Store Manager olarak, Products a gidip yeni ürünler 
         sgPage5.photos.click();
         sgPage5.addToGalery.click();
 
-        ReusableMethods.waitFor(5);
+        ReusableMethods.waitFor(2);
         sgPage5.clickBigPhoto.click();
-        ReusableMethods.waitFor(5);
+        ReusableMethods.waitFor(2);
         sgPage5.chooseBigPhoto.click();
         sgPage5.selectBigPhoto.click();
 
-        ReusableMethods.waitFor(5);
+        ReusableMethods.waitFor(2);
         sgPage5.productTitle.sendKeys("NewLaptop");
         actions.sendKeys(Keys.TAB).sendKeys("20").sendKeys(Keys.TAB).
                 sendKeys("15").sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("MSK Laptop 16GB Ram 500 SSD").
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("16GB Ram \n 500 SSD \n Dual Core").perform();
-        ReusableMethods.waitFor(5);
+        ReusableMethods.waitFor(2);
 
         // TC_004 Kisa tanımlama ve geniş tanımlama (short description, Description)
         Assert.assertTrue(sgPage5.shortDescription.isDisplayed());
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(1);
         Assert.assertTrue(sgPage5.description.isDisplayed());
 
         // TC_003 Urun ismi ekle; product title, satis miktarı, foto - Devami
 
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ReusableMethods.waitFor(4);
+        ReusableMethods.waitFor(2);
         sgPage5.manageStockClick.click();
-        ReusableMethods.waitFor(4);
+        ReusableMethods.waitFor(2);
         actions.sendKeys(Keys.TAB).sendKeys("10").perform();
         actions.sendKeys(Keys.PAGE_UP).perform();
-        ReusableMethods.waitFor(4);
+        ReusableMethods.waitFor(2);
 
         sgPage5.accessoriesCategories.click();
         sgPage5.elegantAutoGroupBrand.click();
 
-        ReusableMethods.waitFor(4);
-        //sgPage5.soldIndividually.click();
-        //sgPage5.submitAddProduct.click();
+        ReusableMethods.waitFor(2);
+        sgPage5.submitAddProduct.click();
 
     }
     public void signInProduct(){
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(2);
         sgPage5.myAccount.click();
         sgPage5.userName.sendKeys(ConfigReader.getProperty("userEmail"));
         sgPage5.passWord.sendKeys(ConfigReader.getProperty("pass"), Keys.ENTER);
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(2);
         sgPage5.storeManager.click();
         ReusableMethods.waitFor(3);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         sgPage5.products.click();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(2);
 
     }
 }
