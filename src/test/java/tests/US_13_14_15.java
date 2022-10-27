@@ -104,6 +104,7 @@ public class US_13_14_15 {
         ReusableMethods.waitFor(3);
 
         // Vendor "Exclude categories" dan random bir kategori seciniz
+        ReusableMethods.waitFor(3);
         actions.click(spendinggoodPages.ExcludeCategories).
                 sendKeys("Boys" + Keys.TAB).sendKeys(Keys.ENTER).perform();
 
