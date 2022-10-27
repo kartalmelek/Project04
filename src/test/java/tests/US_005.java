@@ -87,6 +87,7 @@ public class US_005 {  // Store Manager olarak, Products a gidip yeni ürünler 
 
         ReusableMethods.waitFor(2);
         ReusableMethods.jsclick(sgPage5.submitAddProduct);
+        Driver.closeDriver();
 
     }
     public void signInProduct(){
