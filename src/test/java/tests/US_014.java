@@ -59,6 +59,7 @@ public class US_014 {
         actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
         spendinggoodPages.minInput.sendKeys("5");
 
+
         // Vendor "Maximum spend" bolumune en az alma miktarini giriniz
        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
        spendinggoodPages.maxInput.sendKeys("6");
