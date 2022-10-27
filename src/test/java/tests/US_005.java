@@ -86,7 +86,7 @@ public class US_005 {  // Store Manager olarak, Products a gidip yeni ürünler 
         sgPage5.elegantAutoGroupBrand.click();
 
         ReusableMethods.waitFor(2);
-        sgPage5.submitAddProduct.click();
+        ReusableMethods.jsclick(sgPage5.submitAddProduct);
 
     }
     public void signInProduct(){
