@@ -22,7 +22,7 @@ public class US_13_14_15 {
         SpendinggoodPage spendinggoodPages = new SpendinggoodPage();
         Faker faker = new Faker();
 
-        // Vendor "https://spendinggood.com/"  adresine gider
+        // Vendor "https://spendinggood.com/"  adresine gider.
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
 
         // Vendor "SIGN IN" butonuna tiklar
