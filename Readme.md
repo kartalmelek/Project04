@@ -1,7 +1,7 @@
 <img src="src/pngs/readme.png" width="100px" height="120px" align="right"/>
 
 
-# https://www.spendinggood.com web Test Otomasyonu
+# https://www.spendinggood.com Web Test Otomasyonu
 ## Web Test Senaryosu
 ### Test Senaryosu İçerisinde:
 > - Güvenli bir registration yapılmalı
