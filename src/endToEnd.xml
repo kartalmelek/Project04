@@ -1,9 +1,9 @@
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="EndToEnd Test">
-    <test name="Kupon Olusturma, Urun Limitleme, Urun Kisitlama">
+    <test name="Kupon Olusturma">
         <classes>
-            <class name="tests.US_13_14_15"></class>
+            <class name="tests.US_013"></class>
         </classes>
     </test>
 </suite>

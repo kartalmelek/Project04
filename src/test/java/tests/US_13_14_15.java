@@ -27,7 +27,7 @@ public class US_13_14_15 extends TestBaseRapor {
                 createTest("Pozitif Test",
                         "Kullanici ekranda takipcilerin isim, mail ve islemlerini gorur.");
 
-        // Vendor "https://spendinggood.com/"  adresine gider
+        // Vendor "https://spendinggood.com/"  adresine gider.
         Driver.getDriver().get(ConfigReader.getProperty("mainUrl"));
 
         extentTest.info("'https://spendinggood.com/' adresine gidildi.");
@@ -140,6 +140,7 @@ public class US_13_14_15 extends TestBaseRapor {
         extentTest.info("exclude sale items isaretlendi");
 
         // Vendor "Exclude categories" dan random bir kategori seciniz
+        ReusableMethods.waitFor(3);
         actions.click(spendinggoodPages.ExcludeCategories).
                 sendKeys("Boys" + Keys.TAB).sendKeys(Keys.ENTER).perform();
 
