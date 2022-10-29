@@ -348,7 +348,6 @@ public class SpendinggoodPage {
 
 
     //US 13-14-15 Melek (350-399)
-
     @FindBy(xpath = "//*[@class='wcfmfa fa-gift']")
     public WebElement coupons;
     @FindBy(xpath = "//*[@class='wcfm_sub_menu_items wcfm_sub_menu_items_coupon_manage moz_class']")
@@ -393,6 +392,7 @@ public class SpendinggoodPage {
     public WebElement tarihSecimi;
     @FindBy(xpath = "//*[contains(text(),'Coupon Successfully Published.')] ")
     public WebElement BasariliYazisi;
+
 
 
 
@@ -522,31 +522,4 @@ public class SpendinggoodPage {
     public WebElement selectBigPhoto;
     @FindBy(xpath="//input[@id='sold_individually']")
     public WebElement soldIndividually;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -4,6 +4,8 @@
     <test name="Kupon Olusturma">
         <classes>
             <class name="tests.US_013"></class>
+            <class name="tests.US_014"></class>
+            <class name="tests.US_015"></class>
         </classes>
     </test>
 </suite>
